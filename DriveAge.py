@@ -1,24 +1,3 @@
-# Please ensure Proc. wants matrix is unticked (the tick box below this window)
-# The user input is required to define key variables below
-
-DEGREES_OF_FREEDOM = 1
-KNOTS = (22 , 60)
-NEW_COLUMN_PREFIX = "DriverAge"
-KEEP_ORIGINAL_COLUMN = False 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # This code runs the spline creation
 # Users should NOT make changes to this
 import dataiku
@@ -67,7 +46,6 @@ class RegressionSplines:
 
         return new_df    
 
-processor = RegressionSplines(DEGREES_OF_FREEDOM, KNOTS, NEW_COLUMN_PREFIX,KEEP_ORIGINAL_COLUMN)
 
 
 
